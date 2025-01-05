@@ -1,0 +1,9 @@
+
+<div *ngIf="selectedemployee" class="employee-detail">
+    <h2>{{ selectedemployee.name }}</h2>
+    <p>Age: {{ selectedemployee.age }}</p>
+    <p>Salary: {{ selectedemployee.salary }}</p>
+  </div>
+  <div *ngIf="!selectedemployee" class="error-message">
+    <p>Employee not found.</p>
+  </div>

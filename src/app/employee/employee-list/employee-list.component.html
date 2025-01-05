@@ -1,0 +1,14 @@
+<!-- <p>employee-list works!</p>
+<div *ngFor="let employee of DataEmployee" (click)="onSelect(employee)">
+    <h3>{{ employee.name }}</h3>
+    <p>{{ employee.age}}</p>
+    <p>{{employee.salary}}</p>
+  </div> -->
+
+  <!--  -->
+  <div *ngFor="let employee of DataEmployee" class="employee-card" (click)="onSelect(employee)" >
+    <h3>{{ employee.name }}</h3>
+    <p>Age: {{ employee.age }}</p>
+    <p>Salary: {{ employee.salary }}</p>
+  </div>
+  
